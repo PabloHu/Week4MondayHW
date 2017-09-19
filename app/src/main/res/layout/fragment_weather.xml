@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:padding="5sp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@android:color/black">
+
+        <LinearLayout
+            android:id="@+id/statsDesc0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@android:color/white">
+
+            <TextView
+                android:id="@+id/tvCity"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="City" />
+
+            <TextView
+                android:id="@+id/tvCountry"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Country" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/statsDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/statsDesc0"
+            android:orientation="horizontal"
+            android:background="@android:color/white">
+
+            <TextView
+                android:id="@+id/tvWeatherDesc"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="weather desc" />
+
+            <TextView
+                android:id="@+id/tvWeatherDT"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="DT" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/statsDesc"
+            android:background="@android:color/holo_blue_dark"
+            android:layout_marginTop="5sp">
+
+            <ImageView
+                android:id="@+id/ivWeatherImage"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_weight="2" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
